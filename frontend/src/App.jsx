@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import './App.css'
-import { Search, UserRound, ShoppingBag } from 'lucide-react'
+import { Search, UserRound, ShoppingBag, Menu, X } from 'lucide-react'
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
 
@@ -9,8 +11,8 @@ function App() {
 
         <h1 className="logo">VELORA</h1>
 
-        <nav className="nav-links">
-          <a href="/">Home</a>
+<nav className={`nav-links ${menuOpen ? 'active' : ''}`}>        
+    <a href="/">Home</a>
           <a href="/women">Women</a>
           <a href="/men">Men</a>
           <a href="/new-arrivals">New Arrivals</a>
@@ -18,10 +20,19 @@ function App() {
         </nav>
 
         <div className="nav-icons">
-          <Search />
-          <UserRound />
-          <ShoppingBag />
-        </div>
+
+  <button
+    className="menu-toggle"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? <X /> : <Menu />}
+  </button>
+
+  <Search />
+  <UserRound />
+  <ShoppingBag />
+
+</div>
 
       </header>
       <section className="hero">
