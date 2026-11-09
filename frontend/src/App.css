@@ -1,0 +1,88 @@
+.app {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 6%;
+  background-color: #f8f5ef;
+}
+
+.logo {
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: #25221e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #25221e;
+  font-size: 14px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 22px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 18, 16, 0.65),
+      rgba(20, 18, 16, 0.05)
+    ),
+    url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1600')
+    center/cover no-repeat;
+
+  color: white;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.shop-btn {
+  padding: 16px 30px;
+  background: #f8f5ef;
+  color: #25221e;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.shop-btn:hover {
+  background: #d8c7ae;
+}
